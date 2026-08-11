@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sportandtime.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="navbar">
+        <div class="navbox">
+            <div id="back" class="icon">
+                <a href="homep.html" id="back-link">
+    <i class="fa-solid fa-arrow-left"></i>
+     </a>
+            </div>
+            <div id="objective" class="icon">
+                Set Your Request
+            </div>
+            <div class="top-right">
+              <div class="theme-toggle">
+                <label>
+                  <input type="checkbox" id="theme-switch">
+                  <span class="switch"></span>
+                </label>
+                <span class="label-text">Dark mode</span>
+              </div>
+              <div id="proposals" class="icon">
+                <a href="show-availability.html" id="availability" aria-label="Show availability">
+                    <img src="availability.jpeg" id="availability-img" alt="Availability">
+                </a>
+              </div>
+            </div>
+            
+        </div>
+    </header>
+    <div class="container">
+     <div class="container2">
+        <form id="request-form" action="">
+            <div class="form-group">
+                <label for="sport">Select Sport:</label>
+                <select id="sport" name="sport" required>
+                    <option value="" disabled selected>Select a sport</option>
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="tennis">Tennis</option>
+                    <option value="badminton">Badminton</option>
+                    <option value="volleyball">Volleyball</option>
+                    <option value="cricket">Cricket</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <lebel for="date">Select Date:</label>
+                <select id="date">
+                    <option value="2day">Today</option>
+                    <option value="tomorrow">Tomorrow</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hour">Select Time (24-hour):</label>
+                <div class="time-picker">
+                    <select id="hour" name="hour" required>
+                        <option value="" disabled selected>HH</option>
+                        <option value="0">00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                    </select>
+                    :
+                    <select id="minute" name="minute" required>
+                        <option value="" disabled selected>MM</option>
+                        <option value="0">00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                    </select>
+                </div>
+                <!-- hidden combined time value in HH:MM (24-hour) -->
+                <input type="hidden" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script>
+        // combine hour and minute into hidden time input as HH:MM (24-hour)
+        (function(){
+            const form = document.getElementById('request-form');
+            if(!form) return;
+            const hour = document.getElementById('hour');
+            const minute = document.getElementById('minute');
+            const timeHidden = document.getElementById('time');
+            function pad(n){ return String(n).padStart(2,'0'); }
+            form.addEventListener('submit', function(e){
+                // ensure selects have values
+                if(!hour.value || !minute.value){
+                    e.preventDefault();
+                    alert('Please select both hour and minute');
+                    return false;
+                }
+                // If user selects 24 for hour, convert to 00 (midnight next day) or keep 24:00 if desired
+                let h = parseInt(hour.value,10);
+                if(h === 24) h = 0; // normalize 24 to 00
+                timeHidden.value = pad(h) + ':' + pad(minute.value);
+                // allow submit to continue
+            });
+        })();
+    </script>
+
+    <script src="theme.js"></script>
+</body>
+</html>

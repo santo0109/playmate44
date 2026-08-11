@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homep.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header id="nabbar">
+    <div class="nabbox">
+      <div id="menu">
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+      </div>
+      <div id="branding">
+        <p id="b-text">Play Mate</p>
+      </div>
+      <div class="top-right">
+        <div class="theme-toggle">
+          <label>
+            <input type="checkbox" id="theme-switch">
+            <span class="switch"></span>
+          </label>
+          <span class="label-text">Dark mode</span>
+        </div>
+        <div id="profile">
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--banner-->
+  <section class="banner_sec">
+    <div id="bannerbox">
+       <img src="bannerr01.jpeg" id="img1" class="imgs active"> 
+       <img src="bannerr2.jpeg" id="img2" class="imgs"> 
+
+    
+    </div>
+     <script>
+  const images = document.querySelectorAll('#bannerbox .imgs');
+  let current = 0;
+  setInterval(() => {
+    images[current].classList.remove('active');
+    current = (current + 1) % images.length;
+    images[current].classList.add('active');
+  }, 5000);
+</script> 
+
+
+  </section>
+  
+  <!--buttons-->
+  <div class="row1">
+    <div id="b1" class="box">
+       <a href="sportandtime.html" class="box-link"><img src="sports&time.jpeg" id="sport&time" class="--buttons--"></a>
+    </div>
+    <div id="b2"class="box">
+       <a href="show-availability.html" class="box-link"><img src="availability.jpeg" id="availability" class="--buttons--"></a>
+
+    </div>
+  </div> 
+  <div class="row2">
+    <div id="b3"class="box">
+      <a href="#" class="box-link"><img src="history.jpeg" id="history" class="--buttons--"></a>
+    </div>
+    <div id="b4"class="box">
+      <a href="#" class="box-link"><img src="invite.jpeg" id="invite" class="--buttons--"></a>
+      
+    </div>
+  </div> 
+  <div class="row3">
+    <div id="b5"class="box">
+      <a href="#" class="box-link"><img src="chat.jpeg" id="chat" class="--buttons--"></a>
+    </div>
+    <div id="b6"class="box">
+      <a href="#" class="box-link"><img src="leaderboard.jpeg" id="leaderboard" class="--buttons--"></a>
+    </div>
+  </div> 
+  <div class="row4" id="empty">
+    
+  </div>
+
+  
+    
+    <script src="theme.js"></script>
+</body>
+</html>
